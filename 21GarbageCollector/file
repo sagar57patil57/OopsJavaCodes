@@ -1,0 +1,20 @@
+In c++, if we use 'new' to make dynamic mem alloc then we also need to call delete
+explicity to delete all the dynamic data.If we dont then the dynamic data doesnot get
+deleted and eats up space. this is called memory leak
+
+but in java we dont have delete keyword so deletion of UNREFERENCED OBJS is done
+by GARBAGE COLLECTOR
+
+JVM  creates 3 THREADS
+1.main THREADS
+2.thread scheduler(run in background)
+3.GARBAGE COLLECTOR(run in background)
+
+
+
+FINALIZE
+just before releasing statically allocated data(eg. REFER VARS) finalize is called and it
+contains some code related to the objs created.after finalize is executed ALL static and 
+dynamic data are deleted by GARBAGE COLLECTOR
+
+Object class has finalize(){  } which is empty. if we want to override finalize then we can

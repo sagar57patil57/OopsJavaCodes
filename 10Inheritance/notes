@@ -1,0 +1,16 @@
+mechanism by which a class can inherit data from other class
+
+types :-
+1.single
+2.multilevel:
+    A CLASS(not obj) cannot directly access the grandparent’s members i.e. it cannot use super.super() in child to access grandpa 
+3.Hierarchical:
+     In Hierarchical Inheritance, one class serves as a superclass (base class) for more than one sub class
+4.Multiple:(causes diamond problem)
+    In java, we can achieve multiple inheritance only through Interfaces.
+
+Object class is only class with no superclass,if we make a class with no parent then its parent is Object class by default
+
+Constructors are not inherited.only Constructor with no arg is called in childs Constructor.if we want to ru parents Constructor with arg when use SUPER(x, y),etc.
+
+OverRIDING: if child and parent have same static fun name then parent hides child fun
